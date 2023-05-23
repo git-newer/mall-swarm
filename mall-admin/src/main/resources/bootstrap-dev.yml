@@ -2,7 +2,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: http://localhost:8848
+        server-addr: http://60.204.133.47:8848
+        namespace: 53034e98-9b27-4c8f-94df-14c7eafd3101
       config:
-        server-addr: http://localhost:8848
+        server-addr: http://60.204.133.47:8848
         file-extension: yaml
+        namespace: 53034e98-9b27-4c8f-94df-14c7eafd3101
+        extension-configs:
+          - dataId: mall-admin-dev.yaml
+            group: dev
+            refresh: true
